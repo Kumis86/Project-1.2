@@ -35,4 +35,4 @@ Proyek ini adalah sebuah **game kuis sederhana** yang dibangun menggunakan Pytho
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/Kumis86/Poject1.2.git
+   git clone https://github.com/Kumis86/Poject-1.2.git
