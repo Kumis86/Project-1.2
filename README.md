@@ -1,4 +1,4 @@
-# Quiz Game dengan Proteksi Password
+# MakeaQuiz
 
 Proyek ini adalah sebuah **game quiz sederhana** yang dibangun menggunakan Python. Game ini memungkinkan pemain untuk menjawab pertanyaan-pertanyaan yang disimpan dalam file teks. Selain itu, proyek ini juga dilengkapi dengan **sistem proteksi password** untuk mengamankan fitur-fitur yang berhubungan dengan manipulasi data, seperti menambah, mengedit, atau menghapus pertanyaan. 
 
