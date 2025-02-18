@@ -1,13 +1,12 @@
 from verification import *
 #fungsi untuk memilih mode Lihat Pertanyaan
-def Show_questions_mode():
+def show_questions_mode():
     os.system('cls')
-    
     print("Silahkan untuk memilih mode")
-    print("1.Lihat Pertanyaan Essay")
-    print("2.Lihat Pertanyaan Pilihan Ganda")
-    print("3.Lihat Pertanyaan True or False")
-    print("4.Back")
+    print("1. Lihat Pertanyaan Essay")
+    print("2. Lihat Pertanyaan Pilihan Ganda")
+    print("3. Lihat Pertanyaan True or False")
+    print("4. Kembali")
     choice = input("Masukkan Nomor (1-4): ")
 
     if choice == "1":
@@ -17,9 +16,9 @@ def Show_questions_mode():
     elif choice == "3":
         show_questions_TF()
     elif choice == "4":
-        main()
-    else :
-        print("nomor tidak valid. Coba Lagi")
+        return "back"  # Kembali ke menu utama
+    else:
+        print("Nomor tidak valid. Coba Lagi")
 
 #fungsi untuk menambah mode Pertanyaan
 def add_question_mode():
@@ -29,7 +28,7 @@ def add_question_mode():
     print("1.Add Pertanyaan Essay")
     print("2.Add Pertanyaan Pilihan Ganda")
     print("3.Add Pertanyaan True or False")
-    print("4.Back")
+    print("4.Kembali")
     choice = input("Masukkan Nomor (1-4): ")
 
     if choice == "1":
@@ -39,7 +38,7 @@ def add_question_mode():
     elif choice == "3":
         add_question_TF()
     elif choice == "4":
-        main()
+        return "back"
     else :
         print("nomor tidak valid. Coba Lagi")
 
@@ -52,17 +51,17 @@ def delete_question_mode():
     print("1.Hapus Pertanyaan Essay")
     print("2.Hapus Pertanyaan Pilihan Ganda")
     print("3.Hapus Pertanyaan True or False")
-    print("4.Back")
+    print("4.kembali")
     choice = input("Masukkan Nomor (1-4): ")
 
     if choice == "1":
        delete_question()
     elif choice == "2":
-        delete_question_PG()
+       delete_question_pg()
     elif choice == "3":
         delete_question_TF()
     elif choice == "4":
-        main()
+        return "back"
     else :
         print("nomor tidak valid. Coba Lagi")
 
@@ -75,7 +74,7 @@ def edit_question_mode():
     print("1.Edit Pertanyaan Essay")
     print("2.Edit Pertanyaan Pilihan Ganda")
     print("3.Edit Pertanyaan True or False")
-    print("4.Back")
+    print("4.Kembali")
     choice = input("Masukkan Nomor (1-4): ")
 
     if choice == "1":
@@ -83,9 +82,9 @@ def edit_question_mode():
     elif choice == "2":
         edit_question_PG()
     elif choice == "3":
-        edit_question_TF()
+        edit_queation_tf()
     elif choice == "4":
-        main()
+        return "back"
     else :
         print("nomor tidak valid. Coba Lagi")
 
@@ -98,7 +97,7 @@ def mode_quiz():
     print("1.Essay")
     print("2.Pilihan Ganda")
     print("3.True or False")
-    print("4.Back")
+    print("4.kembali")
     choice = input("Masukkan Nomor (1-4): ")
 
     if choice == "1":
@@ -108,7 +107,7 @@ def mode_quiz():
     elif choice == "3":
         True_False()
     elif choice == "4":
-        main()
+        return "back"
     else :
         print("nomor tidak valid. Coba Lagi")
 
@@ -262,7 +261,7 @@ def edit_question_PG():
         print("Password salah! Akses ditolak.")
 
 #fungsi untuk menghapus pertanyaan
-    def delete_question_PG():
+def delete_question_pg():
         if ask_password():
             questions_PG = read_questions_PG()
             show_questions_PG()
@@ -332,6 +331,7 @@ def add_question_TF():
         print("Password salah! Akses ditolak.")
 
 #Fungsi untuk mengedit pertanyaan
+def edit_queation_tf():
     if ask_password():
         questions_TF = read_questions_TF()
         show_questions_TF()
