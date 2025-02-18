@@ -353,7 +353,7 @@ def add_question_TF():
         print("Password salah! Akses ditolak.")
 
 #fungsi untuk menghapus pertanyaan
- def delete_question_TF():
+def delete_question_TF():
     if ask_password():
         questions_TF = read_questions_TF()
         show_questions_TF()
