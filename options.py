@@ -1,4 +1,117 @@
 from verification import *
+#fungsi untuk memilih mode Lihat Pertanyaan
+def Show_questions_mode():
+    os.system('cls')
+    
+    print("Silahkan untuk memilih mode")
+    print("1.Lihat Pertanyaan Essay")
+    print("2.Lihat Pertanyaan Pilihan Ganda")
+    print("3.Lihat Pertanyaan True or False")
+    print("4.Back")
+    choice = input("Masukkan Nomor (1-4): ")
+
+    if choice == "1":
+        show_questions()
+    elif choice == "2":
+        show_questions_PG()
+    elif choice == "3":
+        show_questions_TF()
+    elif choice == "4":
+        main()
+    else :
+        print("nomor tidak valid. Coba Lagi")
+
+#fungsi untuk menambah mode Pertanyaan
+def add_question_mode():
+    os.system('cls')
+    
+    print("Silahkan untuk memilih mode")
+    print("1.Add Pertanyaan Essay")
+    print("2.Add Pertanyaan Pilihan Ganda")
+    print("3.Add Pertanyaan True or False")
+    print("4.Back")
+    choice = input("Masukkan Nomor (1-4): ")
+
+    if choice == "1":
+        add_question()
+    elif choice == "2":
+        add_question_PG()
+    elif choice == "3":
+        add_question_TF()
+    elif choice == "4":
+        main()
+    else :
+        print("nomor tidak valid. Coba Lagi")
+
+
+#fungsi untuk menghapus mode Pertanyaan
+def delete_question_mode():
+    os.system('cls')
+    
+    print("Silahkan untuk memilih mode")
+    print("1.Hapus Pertanyaan Essay")
+    print("2.Hapus Pertanyaan Pilihan Ganda")
+    print("3.Hapus Pertanyaan True or False")
+    print("4.Back")
+    choice = input("Masukkan Nomor (1-4): ")
+
+    if choice == "1":
+       delete_question()
+    elif choice == "2":
+        delete_question_PG()
+    elif choice == "3":
+        delete_question_TF()
+    elif choice == "4":
+        main()
+    else :
+        print("nomor tidak valid. Coba Lagi")
+
+
+#fungsi untuk mengedit mode Pertanyaan
+def edit_question_mode():
+    os.system('cls')
+    
+    print("Silahkan untuk memilih mode")
+    print("1.Edit Pertanyaan Essay")
+    print("2.Edit Pertanyaan Pilihan Ganda")
+    print("3.Edit Pertanyaan True or False")
+    print("4.Back")
+    choice = input("Masukkan Nomor (1-4): ")
+
+    if choice == "1":
+        edit_question()
+    elif choice == "2":
+        edit_question_PG()
+    elif choice == "3":
+        edit_question_TF()
+    elif choice == "4":
+        main()
+    else :
+        print("nomor tidak valid. Coba Lagi")
+
+        
+#fungsi untuk memilih Game mode
+def mode_quiz():
+    os.system('cls')
+    
+    print("Silahkan untuk memilih mode")
+    print("1.Essay")
+    print("2.Pilihan Ganda")
+    print("3.True or False")
+    print("4.Back")
+    choice = input("Masukkan Nomor (1-4): ")
+
+    if choice == "1":
+        play_quiz()
+    elif choice == "2":
+        Pilihan_Ganda()
+    elif choice == "3":
+        True_False()
+    elif choice == "4":
+        main()
+    else :
+        print("nomor tidak valid. Coba Lagi")
+
 
 
 #Essay
