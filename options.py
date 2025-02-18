@@ -263,23 +263,23 @@ def edit_question_PG():
 
 #fungsi untuk menghapus pertanyaan
     def delete_question_PG():
-    if ask_password():
-        questions_PG = read_questions_PG()
-        show_questions_PG()
-        try:
-            question_number = int(input("Pilih nomor pertanyaan yang ingin dihapus: ")) - 1
-            if 0 <= question_number < len(questions_PG):
-                questions_PG.pop(question_number)
-                with open("quiz_questions_PG.txt", "w") as file:
-                    for q in questions_PG:
-                        file.write(f"{q['question']}|{q['answer']}\n")
-                print("Pertanyaan berhasil dihapus!")
-            else:
-                print("Nomor pertanyaan tidak valid!")
-        except ValueError:
-            print("Input harus berupa angka!")
-    else:
-        print("Password salah! Akses ditolak.")
+        if ask_password():
+            questions_PG = read_questions_PG()
+            show_questions_PG()
+            try:
+                question_number = int(input("Pilih nomor pertanyaan yang ingin dihapus: ")) - 1
+                if 0 <= question_number < len(questions_PG):
+                    questions_PG.pop(question_number)
+                    with open("quiz_questions_PG.txt", "w") as file:
+                        for q in questions_PG:
+                            file.write(f"{q['question']}|{q['answer']}\n")
+                    print("Pertanyaan berhasil dihapus!")
+                else:
+                    print("Nomor pertanyaan tidak valid!")
+            except ValueError:
+                print("Input harus berupa angka!")
+        else:
+            print("Password salah! Akses ditolak.")
 
 #fungsi untuk bermain
 def Pilihan_Ganda():
