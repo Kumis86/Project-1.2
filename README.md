@@ -1,6 +1,6 @@
 # Quiz Game dengan Proteksi Password
 
-Proyek ini adalah sebuah **game kuis sederhana** yang dibangun menggunakan Python. Game ini memungkinkan pemain untuk menjawab pertanyaan-pertanyaan yang disimpan dalam file teks. Selain itu, proyek ini juga dilengkapi dengan **sistem proteksi password** untuk mengamankan fitur-fitur yang berhubungan dengan manipulasi data, seperti menambah, mengedit, atau menghapus pertanyaan.
+Proyek ini adalah sebuah **game quiz sederhana** yang dibangun menggunakan Python. Game ini memungkinkan pemain untuk menjawab pertanyaan-pertanyaan yang disimpan dalam file teks. Selain itu, proyek ini juga dilengkapi dengan **sistem proteksi password** untuk mengamankan fitur-fitur yang berhubungan dengan manipulasi data, seperti menambah, mengedit, atau menghapus pertanyaan. 
 
 ---
 
@@ -35,4 +35,4 @@ Proyek ini adalah sebuah **game kuis sederhana** yang dibangun menggunakan Pytho
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/Kumis86/Poject-1.2.git
+   git clone https://github.com/Kumis86/Project-1.2.git
