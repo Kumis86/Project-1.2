@@ -204,7 +204,9 @@ def play_quiz():
             score += 1
         else:
             print(f"Salah! Jawaban yang benar adalah: {q['answer']}")
-    print(f"\nGame selesai! Skor Anda: {score}/{len(questions)}")
+    
+    score_result = (score * 100) // len(questions)
+    print(f"\nGame selesai! Skor Anda: {int(score_result)}/100")
 
 #PG
 #fungsi untuk membaca
@@ -297,7 +299,9 @@ def Pilihan_Ganda():
             score += 1
         else:
             print(f"Salah! Jawaban yang benar adalah: {q['answer']}")
-    print(f"\nGame selesai! Skor Anda: {score}/{len(questions_PG)}")
+
+    score_result = (score * 100) // len(questions)
+    print(f"\nGame selesai! Skor Anda: {int(score_result)}/100")
 
 #Truth or False section
 #fungsi untuk membaca
@@ -389,4 +393,6 @@ def True_False():
             score += 1
         else:
             print(f"Salah! Jawaban yang benar adalah: {q['answer']}")
-    print(f"\nGame selesai! Skor Anda: {score}/{len(questions_TF)}")
+
+    score_result = (score * 100) // len(questions)
+    print(f"\nGame selesai! Skor Anda: {int(score_result)}/100")
